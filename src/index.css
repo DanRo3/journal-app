@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 57, 136);
+    border-radius: 16px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.cliptadOne{
+    border-radius: 163px 95px 200px 137px;
+    overflow: hidden;
+    border-bottom: 10px solid #8540e6;
+    border-left: 10px solid #8540e6;
+}
+
+.cliptadTwo{
+    border-radius: 82px 200px 200px 200px;
+    overflow: hidden;
+    border-bottom: 10px solid #8540e6;
+    border-right: 10px solid #8540e6;
+
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.floatingTwo { 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.estrella{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
